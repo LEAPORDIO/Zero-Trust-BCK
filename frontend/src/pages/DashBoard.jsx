@@ -56,7 +56,7 @@ const Dashboard = () => {
 
 
         const socket =
-            io("http://localhost:5100");
+            io("https://zero-trust-bck.onrender.com/");
 
 
         socket.on(
