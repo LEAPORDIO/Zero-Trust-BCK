@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:5100/api",
+    baseURL: "https://zero-trust-bck.onrender.com/api",
     headers: {
         "Content-Type": "application/json"
     }
