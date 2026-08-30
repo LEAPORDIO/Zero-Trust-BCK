@@ -1,3 +1,4 @@
+
 const express = require("express");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
@@ -54,8 +55,8 @@ app.set("trust proxy", 1);
 
 app.use(
     cors({
-        origin: process.env.FRONTEND_URL,
-        credentials: true,
+        origin: "*",
+        credentials: false,
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
         allowedHeaders: [
             "Content-Type",
@@ -236,3 +237,4 @@ server.listen(PORT, () => {
     );
 
 });
+
